@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="css/jquery.mobile-1.4.5.css">
+<script src="js/jquery.js"></script>
+<script type="text/javascript">
+	$(document).on('mobileinit', function(){
+		$.mobile.defaultPageTransition = 'slide';
+	});
+	</script>
+<script src="js/jquery.mobile-1.4.5.js"></script>
+
+
+</head>
+<<body>
+
+<!--comment-->
+
+
+
+
+<!-- Start of first page -->
+<div data-role="page" id="Menu">
+
+	<div data-role="header">
+		<h1>Loyolapp</h1>
+
+	</div><!-- /header -->
+
+
+
+
+
+<!-- Load an icon library to show a hamburger menu (bars) on small screens -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<!-- Top Navigation Menu -->
+<div class="topnav">
+  <a href="#home" class="active"><img src="logo-loyola.png" alt="logo.1"></a>
+  <!-- Navigation links (hidden by default) -->
+  <div id="myLinks">
+    <a href="#dkkl" >DKKL</a>
+    <a href="#suloco">Suloco</a>
+    <a href="#mh">Moment Hunter</a>
+	<a href="#serigala">Serigala</a>
+  </div>
+  <!-- "Hamburger menu" / "Bar icon" to toggle the navigation links -->
+  <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+    <i class="fa fa-bars"></i>
+  </a>
+</div>
+
+
+
+
+	<div role="main" class="ui-content">
+		<p>I'm first in the source order so I'm shown as the page.</p>
+		<a href="#dkkl" class="ui-btn">DKKL</a></p>
+		<a href="#suloco" class="ui-btn">Suloco</a></p>
+		<a href="#mh" class="ui-btn">Moment Hunter</a></p>
+		<a href="#serigala" class="ui-btn">Serigala</a></p>
+
+	</div><!-- /content -->
+
+	<div data-role="footer" data-position="fixed">
+		<h4>Page Footer</h4>
+	</div><!-- /footer -->
+
+</div><!-- /page -->
+
+
+
+
+
+
+<!-- Start of second page -->
+<div data-role="page" id="dkkl">
+
+<div data-role="panel" data-position="right" data-display="overlay" id="mypanel">
+    <!-- panel content goes here -->
+	<p>I'm first in the source order so I'm shown as the page.</p>
+</div><!-- /panel -->
+
+	<div data-role="header">
+	<a href="#Menu" data-direction="reverse" class="ui-btn" ><</a>
+	<a href="#mypanel" class="ui-btn" >></a>
+		<h1>DKKL</h1>
+
+	</div><!-- /header -->
+
+	<div role="main" class="ui-content">
+
+	<a href="#panitia" class="ui-btn" >Kepanitiaan</a>
+
+
+		<p>I'm the second in the source order so I'm hidden when the page loads. I'm just shown if a link that references my id is beeing clicked.</p>
+
+	</div><!-- /content -->
+
+	<div data-role="footer" data-position="fixed">
+		<h4>AMDG</h4>
+	</div><!-- /footer -->
+
+</div><!-- /page -->
+
+
+<!-- Start of third page -->
+<div data-role="page" id="panitia">
+
+	<div data-role="header">
+	<a href="#dkkl" data-direction="reverse" class="ui-btn" ><</a>
+		<h1>Kepanitiaan</h1>
+
+	</div><!-- /header -->
+
+	<div role="main" class="ui-content">
+		<p>I'm the third in the source order so I'm hidden when the page loads. I'm just shown if a link that references my id is beeing clicked.</p>
+		<img src="https://www.w3schools.com/images/w3schools_green.jpg" alt="W3Schools.com">
+
+	</div><!-- /content -->
+
+	<div data-role="footer" data-position="fixed">
+		<h4>AMDG</h4>
+	</div><!-- /footer -->
+
+</div><!-- /page -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- Start of third page -->
+<div data-role="page" id="suloco">
+
+	<div data-role="header">
+	<a href="#Menu" data-direction="reverse" class="ui-btn" ><</a>
+		<h1>Suloco</h1>
+
+	</div><!-- /header -->
+
+	<div role="main" class="ui-content">
+		<p>I'm the third in the source order so I'm hidden when the page loads. I'm just shown if a link that references my id is beeing clicked.</p>
+
+	</div><!-- /content -->
+
+	<div data-role="footer" data-position="fixed">
+		<h4>Page Footer</h4>
+	</div><!-- /footer -->
+
+</div><!-- /page -->
+
+
+
+
+<!-- Start of fourth page -->
+<div data-role="page" id="mh">
+<div data-role="panel" data-position = "right" id="urpanel">
+    <!-- panel content goes here -->
+</div><!-- /panel -->
+
+	<div data-role="header">
+	<a href="#Menu" data-direction="reverse" class="ui-btn" ><</a>
+	<a href="#urpanel" class="ui-btn" >anton</a>
+		<h1>Moment Hunter</h1>
+
+	</div><!-- /header -->
+
+	<div role="main" class="ui-content">
+		<p>I'm the 4th in the source order so I'm hidden when the page loads. I'm just shown if a link that references my id is beeing clicked.</p>
+
+	</div><!-- /content -->
+
+	<div data-role="footer" data-position="fixed">
+		<h4>Page Footer</h4>
+	</div><!-- /footer -->
+
+</div><!-- /page -->
+
+
+
+
+<!-- Start of fourth page -->
+<div data-role="page" id="serigala">
+
+	<div data-role="header">
+	<a href="#Menu" data-direction="reverse" class="ui-btn" ><</a>
+		<h1>Serigala</h1>
+
+	</div><!-- /header -->
+
+	<div role="main" class="ui-content">
+		<p>I'm the 4th in the source order so I'm hidden when the page loads. I'm just shown if a link that references my id is beeing clicked.</p>
+
+	</div><!-- /content -->
+
+	<div data-role="footer" data-position="fixed">
+		<h4>Page Footer</h4>
+	</div><!-- /footer -->
+
+</div><!-- /page -->
+
+
+
+
+</body>
+</html>
